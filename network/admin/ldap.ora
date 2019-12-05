@@ -1,0 +1,3 @@
+DIRECTORY_SERVERS=(oud-prod2.mn-services.nl:1389:1636,oud-accp2.mn-services.nl:1389:1636)
+DEFAULT_ADMIN_CONTEXT = "dc=world"
+DIRECTORY_SERVER_TYPE = OID

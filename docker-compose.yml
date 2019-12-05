@@ -1,0 +1,15 @@
+version: '2'
+services:
+  oracle-client:
+    container_name: my-oracle-app
+    image: oracle/instantclient:12.2.0.1
+    environment:
+      - TNS_ADMIN=/opt/oracle/network/admin
+    volumes:
+      - ./www:/var/www:rw,z
+      - ./conf/httpd.conf:/etc/httpd/conf/httpd.conf:rw,z
+      - ./network:/opt/oracle/network:rw,z
+      - ./rvm:/usr/local/rvm/:rw,z
+    ports:
+      - 8080:80
+    restart: always

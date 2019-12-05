@@ -1,0 +1,12 @@
+table, th, td {
+  border: 1px solid black;
+}
+table {
+    margin-left: 88px;
+    border-collapse: collapse;
+}
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    background-image: url(backgr_eg02.gif);
+
